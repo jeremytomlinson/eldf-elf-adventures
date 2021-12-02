@@ -151,9 +151,9 @@ function PlasmicHome__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   src={{
-                    src: "/plasmic/simple_light_landing_page/images/robloxBestFriendspng.png",
-                    fullWidth: 1053,
-                    fullHeight: 693,
+                    src: "/plasmic/eldf_elf_adventures/images/robloxBestFriendspng2.png",
+                    fullWidth: 1046,
+                    fullHeight: 684,
                     aspectRatio: undefined
                   }}
                 />

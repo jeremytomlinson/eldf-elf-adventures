@@ -48,22 +48,6 @@ function PlasmicFooter__RenderFunc(props) {
         sty.root
       )}
     >
-      <div
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__zKr9T
-        )}
-      />
-
-      <div
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox___2MpIj
-        )}
-      />
-
       <p.Stack
         as={"div"}
         hasGap={true}

@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  background: #f9d8f3cf;
   min-width: 0;
   min-height: 0;
 }
@@ -191,7 +192,7 @@
   font-weight: 700;
   text-align: center;
   line-height: 1;
-  color: rgba(51, 140, 245, 0);
+  color: #338cf5;
   background: linear-gradient(
       90deg,
       rgb(51, 140, 245) 0%,
@@ -242,7 +243,7 @@
   justify-content: flex-start;
   width: 100%;
   max-width: 1000px;
-  background: #fce5f4;
+  background: #338cf545;
   min-width: 0;
   border: 2px solid #ff22e0;
 }
@@ -264,8 +265,8 @@
   object-fit: cover;
   width: 100%;
   height: auto;
-  margin-top: 5rem;
   min-width: 0;
+  margin: 2rem 0rem 0rem;
 }
 .img__gp2UN > picture > img {
   object-fit: cover;
@@ -278,8 +279,8 @@
   object-fit: cover;
   width: 100%;
   height: auto;
-  margin-top: 5rem;
   min-width: 0;
+  margin: 2rem 0rem 0rem;
 }
 .img__tzf3E > picture > img {
   object-fit: cover;
@@ -292,8 +293,8 @@
   object-fit: cover;
   width: 100%;
   height: auto;
-  margin-top: 5rem;
   min-width: 0;
+  margin: 2rem 0rem 0rem;
 }
 .img__cgAze > picture > img {
   object-fit: cover;
@@ -306,8 +307,8 @@
   object-fit: cover;
   width: 100%;
   height: auto;
-  margin-top: 5rem;
   min-width: 0;
+  margin: 2rem 0rem;
 }
 .img___3LNO > picture > img {
   object-fit: cover;
@@ -318,4 +319,6 @@
 .footer:global(.__wab_instance) {
   position: relative;
   align-self: center;
+  width: 100%;
+  min-width: 0;
 }

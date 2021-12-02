@@ -31,12 +31,13 @@
       "icons": [],
       "images": [],
       "indirect": true,
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "doqqBYaWyoDkH95Fx1Fcw5",
       "projectApiToken": "7TmwwZD7pTTRpU3puxmLW71ZnG29DqSdGCKKhnopZNdghv8rpWPVMyCefLhYR1NALWRF9BNzGiNCsu4XbA",
-      "projectName": "Simple Light Landing Page",
+      "projectName": "Eldf Elf Adventures",
       "version": "latest",
       "cssFilePath": "plasmic/simple_light_landing_page/plasmic_simple_light_landing_page.module.css",
       "components": [
@@ -421,6 +422,11 @@
           "id": "I8GWaO2f1",
           "name": "roblox4.jpg",
           "filePath": "../public/plasmic/simple_light_landing_page/images/roblox4Jpg.jpeg"
+        },
+        {
+          "id": "Y7opuDfnS",
+          "name": "roblox-best-friends.png 2",
+          "filePath": "../public/plasmic/eldf_elf_adventures/images/robloxBestFriendspng2.png"
         }
       ],
       "indirect": false,
