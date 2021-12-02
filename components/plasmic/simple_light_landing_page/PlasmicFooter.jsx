@@ -91,21 +91,6 @@ function PlasmicFooter__RenderFunc(props) {
           >
             {"Built in Plasmic. "}
           </p.PlasmicLink>
-
-          <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              defaultcss.__wab_text,
-              sty.text
-            )}
-          >
-            {
-              "Is everyone on Roblox? If not, then who am I talking to right now?"
-            }
-          </div>
         </div>
       </p.Stack>
     </p.Stack>
@@ -113,8 +98,7 @@ function PlasmicFooter__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -148,7 +132,6 @@ export const PlasmicFooter = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
     internalArgProps: PlasmicFooter__ArgProps

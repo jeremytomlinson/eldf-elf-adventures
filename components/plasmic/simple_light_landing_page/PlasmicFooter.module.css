@@ -100,10 +100,3 @@
 .root .link__oyNfK:hover {
   text-decoration-line: underline;
 }
-.text {
-  position: relative;
-  height: auto;
-  width: auto;
-  font-size: 14px;
-  color: #666666 /* plasmic-token: nQSHOPw2l7dk */;
-}
