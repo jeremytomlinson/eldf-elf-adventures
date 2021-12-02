@@ -1,0 +1,99 @@
+.root:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox__q6OUf {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.freeBox__lrmSk {
+  display: flex;
+  flex-direction: column;
+}
+.freeBox__lrmSk > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: calc(0px - 8px);
+  height: calc(100% + 8px);
+}
+.freeBox__lrmSk > :global(.__wab_flex-container) > *,
+.freeBox__lrmSk > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__lrmSk > :global(.__wab_flex-container) > picture > img,
+.freeBox__lrmSk
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 8px;
+}
+.slotTargetName {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+}
+.text__i6UiU {
+  font-size: 48px;
+}
+.freeBox__sXlzw {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.freeBox__sXlzw > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(0px - 8px);
+  height: calc(100% + 8px);
+}
+.freeBox__sXlzw > :global(.__wab_flex-container) > *,
+.freeBox__sXlzw > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__sXlzw > :global(.__wab_flex-container) > picture > img,
+.freeBox__sXlzw
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 8px;
+}
+.bullet___8Buah:global(.__wab_instance) {
+  position: relative;
+}
+.bullet__ubAiY:global(.__wab_instance) {
+  position: relative;
+}
+.bullet__xMj2P:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox__g52Si {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(13px + 8px) !important;
+}
+.button__bXps:global(.__wab_instance) {
+  position: relative;
+}
+.svg__sZQq {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg__bpeEf {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg__lPqOs {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  object-fit: cover;
+}
