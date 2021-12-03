@@ -202,9 +202,9 @@ function PlasmicHome__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   src={{
-                    src: "/plasmic/simple_light_landing_page/images/roblox1Jpg.jpeg",
-                    fullWidth: 715,
-                    fullHeight: 715,
+                    src: "/plasmic/eldf_elf_adventures/images/roblox5Jpg.jpeg",
+                    fullWidth: 564,
+                    fullHeight: 566,
                     aspectRatio: undefined
                   }}
                 />
