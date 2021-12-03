@@ -143,7 +143,7 @@ function PlasmicHome__RenderFunc(props) {
               >
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__va5Ih)}
+                  className={classNames(sty.img__iB8K2)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
@@ -168,9 +168,9 @@ function PlasmicHome__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   src={{
-                    src: "/plasmic/simple_light_landing_page/images/roblox3Jpg.jpeg",
-                    fullWidth: 641,
-                    fullHeight: 720,
+                    src: "/plasmic/eldf_elf_adventures/images/glitchedPiggybackpng.png",
+                    fullWidth: 2160,
+                    fullHeight: 1620,
                     aspectRatio: undefined
                   }}
                 />
@@ -185,9 +185,9 @@ function PlasmicHome__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   src={{
-                    src: "/plasmic/simple_light_landing_page/images/roblox2Jpg.jpeg",
-                    fullWidth: 750,
-                    fullHeight: 745,
+                    src: "/plasmic/eldf_elf_adventures/images/strongCarspng.png",
+                    fullWidth: 2160,
+                    fullHeight: 1620,
                     aspectRatio: undefined
                   }}
                 />
@@ -202,9 +202,9 @@ function PlasmicHome__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   src={{
-                    src: "/plasmic/eldf_elf_adventures/images/roblox5Jpg.jpeg",
-                    fullWidth: 564,
-                    fullHeight: 566,
+                    src: "/plasmic/eldf_elf_adventures/images/doublePurpleCarpng.png",
+                    fullWidth: 2160,
+                    fullHeight: 1620,
                     aspectRatio: undefined
                   }}
                 />
@@ -219,8 +219,280 @@ function PlasmicHome__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   src={{
-                    src: "/plasmic/simple_light_landing_page/images/roblox4Jpg.jpeg",
-                    fullWidth: 504,
+                    src: "/plasmic/eldf_elf_adventures/images/avatarEditorjpeg.jpeg",
+                    fullWidth: 1360,
+                    fullHeight: 1020,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__ceFRz)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/halfOfTrainjpeg.jpeg",
+                    fullWidth: 2160,
+                    fullHeight: 1620,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__ay93M)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/nextToACakepng.png",
+                    fullWidth: 1600,
+                    fullHeight: 877,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__mgUrc)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/fakeYoutuberpng.png",
+                    fullWidth: 1600,
+                    fullHeight: 877,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__dElta)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/cuteThimgpngpng.png",
+                    fullWidth: 2160,
+                    fullHeight: 1620,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__uvQtv)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/lawnMowerspng.png",
+                    fullWidth: 2160,
+                    fullHeight: 1620,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__nmig5)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/uwUpng.png",
+                    fullWidth: 2160,
+                    fullHeight: 1620,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__yiRa)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/cutiepng.png",
+                    fullWidth: 800,
+                    fullHeight: 599,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__uUyOz)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/somethingHappenedToMyBodypng.png",
+                    fullWidth: 1600,
+                    fullHeight: 877,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__vfCeM)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/cutieBathroomGrannypng.png",
+                    fullWidth: 1600,
+                    fullHeight: 877,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__sLiOj)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/lolpng.png",
+                    fullWidth: 1600,
+                    fullHeight: 877,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__iVbbt)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/emoStevepng.png",
+                    fullWidth: 768,
+                    fullHeight: 574,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__hJkZe)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/carInGympng.png",
+                    fullWidth: 983,
+                    fullHeight: 524,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__w5C8H)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/dontBeSuspiciousjpg.jpeg",
+                    fullWidth: 800,
+                    fullHeight: 450,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__ixApn)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/bloxburgjpg.jpeg",
+                    fullWidth: 640,
+                    fullHeight: 360,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__zvWkz)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/yayyyjpg.jpeg",
+                    fullWidth: 750,
+                    fullHeight: 422,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__va5Ih)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  src={{
+                    src: "/plasmic/eldf_elf_adventures/images/robloxBestFriendspng2.png",
+                    fullWidth: 1046,
                     fullHeight: 684,
                     aspectRatio: undefined
                   }}

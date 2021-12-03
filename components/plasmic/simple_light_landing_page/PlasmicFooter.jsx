@@ -89,7 +89,7 @@ function PlasmicFooter__RenderFunc(props) {
             href={"https://www.plasmic.app/"}
             platform={"nextjs"}
           >
-            {"Built in Plasmic. "}
+            {"Built in Plasmic.app. "}
           </p.PlasmicLink>
         </div>
       </p.Stack>
