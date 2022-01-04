@@ -341,23 +341,6 @@ function PlasmicHome__RenderFunc(props) {
 
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__vfCeM)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  src={{
-                    src: "/plasmic/eldf_elf_adventures/images/cutieBathroomGrannypng.png",
-                    fullWidth: 1600,
-                    fullHeight: 877,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <p.PlasmicImg
-                  alt={""}
                   className={classNames(sty.img__iVbbt)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
