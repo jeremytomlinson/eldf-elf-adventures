@@ -19,7 +19,6 @@ import BaseCard from "../../BaseCard"; // plasmic-import: z_3Em9AZdlr/component
 import Bullet from "../../Bullet"; // plasmic-import: B86J7ZdFwg8/component
 import Button from "../../Button"; // plasmic-import: 20t1qijZHMeb/component
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicPlan.module.css"; // plasmic-import: 99SDX6BCO1E/css
 
@@ -42,21 +41,11 @@ function PlasmicPlan__RenderFunc(props) {
       data-plasmic-for-node={forNode}
       className={classNames("__wab_instance", sty.root)}
     >
-      <div
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__q6OUf
-        )}
-      >
+      <div className={classNames(projectcss.all, sty.freeBox__q6OUf)}>
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__lrmSk
-          )}
+          className={classNames(projectcss.all, sty.freeBox__lrmSk)}
         >
           {p.renderPlasmicSlot({
             defaultContents: "Basic",
@@ -68,9 +57,8 @@ function PlasmicPlan__RenderFunc(props) {
             defaultContents: (
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__i6UiU
                 )}
               >
@@ -86,11 +74,7 @@ function PlasmicPlan__RenderFunc(props) {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox__sXlzw
-                )}
+                className={classNames(projectcss.all, sty.freeBox__sXlzw)}
               >
                 <Bullet
                   className={classNames("__wab_instance", sty.bullet___8Buah)}
@@ -109,13 +93,7 @@ function PlasmicPlan__RenderFunc(props) {
             value: args.description
           })}
 
-          <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__g52Si
-            )}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__g52Si)}>
             {p.renderPlasmicSlot({
               defaultContents: (
                 <Button

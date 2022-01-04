@@ -17,7 +17,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicBaseCard.module.css"; // plasmic-import: z_3Em9AZdlr/css
 
@@ -35,23 +34,14 @@ function PlasmicBaseCard__RenderFunc(props) {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        { [sty.root__long]: hasVariant(variants, "long", "long") }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__long]: hasVariant(variants, "long", "long")
+      })}
     >
       <div
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__vfI,
-          {
-            [sty.freeBox__long__vfIIq0Km]: hasVariant(variants, "long", "long")
-          }
-        )}
+        className={classNames(projectcss.all, sty.freeBox__vfI, {
+          [sty.freeBox__long__vfIIq0Km]: hasVariant(variants, "long", "long")
+        })}
       >
         {p.renderPlasmicSlot({
           defaultContents:
@@ -65,27 +55,18 @@ function PlasmicBaseCard__RenderFunc(props) {
 
       {(hasVariant(variants, "long", "long") ? true : true) ? (
         <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__oVu74,
-            {
-              [sty.freeBox__long__oVu74Iq0Km]: hasVariant(
-                variants,
-                "long",
-                "long"
-              )
-            }
-          )}
+          className={classNames(projectcss.all, sty.freeBox__oVu74, {
+            [sty.freeBox__long__oVu74Iq0Km]: hasVariant(
+              variants,
+              "long",
+              "long"
+            )
+          })}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <svg
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__xVvy3
-                )}
+                className={classNames(projectcss.all, sty.svg__xVvy3)}
                 role={"img"}
               />
             ),

@@ -17,7 +17,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicSection.module.css"; // plasmic-import: 8HhDVoN451Z/css
 
@@ -41,28 +40,22 @@ function PlasmicSection__RenderFunc(props) {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root__color_dark]: hasVariant(variants, "color", "dark"),
-          [sty.root__color_halfDark]: hasVariant(variants, "color", "halfDark"),
-          [sty.root__hasSubtitle]: hasVariant(
-            variants,
-            "hasSubtitle",
-            "hasSubtitle"
-          )
-        }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__color_dark]: hasVariant(variants, "color", "dark"),
+        [sty.root__color_halfDark]: hasVariant(variants, "color", "halfDark"),
+        [sty.root__hasSubtitle]: hasVariant(
+          variants,
+          "hasSubtitle",
+          "hasSubtitle"
+        )
+      })}
     >
       <p.Stack
         as={"div"}
         data-plasmic-name={"content"}
         data-plasmic-override={overrides.content}
         hasGap={true}
-        className={classNames(defaultcss.all, projectcss.all, sty.content, {
+        className={classNames(projectcss.all, sty.content, {
           [sty.content__color_halfDark]: hasVariant(
             variants,
             "color",
@@ -82,18 +75,13 @@ function PlasmicSection__RenderFunc(props) {
           <div
             data-plasmic-name={"titleContainer"}
             data-plasmic-override={overrides.titleContainer}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.titleContainer,
-              {
-                [sty.titleContainer__hasTitle]: hasVariant(
-                  variants,
-                  "hasTitle",
-                  "hasTitle"
-                )
-              }
-            )}
+            className={classNames(projectcss.all, sty.titleContainer, {
+              [sty.titleContainer__hasTitle]: hasVariant(
+                variants,
+                "hasTitle",
+                "hasTitle"
+              )
+            })}
           >
             {p.renderPlasmicSlot({
               defaultContents: "Title",
@@ -106,18 +94,13 @@ function PlasmicSection__RenderFunc(props) {
           <div
             data-plasmic-name={"subtitleContainer"}
             data-plasmic-override={overrides.subtitleContainer}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.subtitleContainer,
-              {
-                [sty.subtitleContainer__hasSubtitle]: hasVariant(
-                  variants,
-                  "hasSubtitle",
-                  "hasSubtitle"
-                )
-              }
-            )}
+            className={classNames(projectcss.all, sty.subtitleContainer, {
+              [sty.subtitleContainer__hasSubtitle]: hasVariant(
+                variants,
+                "hasSubtitle",
+                "hasSubtitle"
+              )
+            })}
           >
             {p.renderPlasmicSlot({
               defaultContents: "Subtitle",
@@ -130,28 +113,23 @@ function PlasmicSection__RenderFunc(props) {
         <div
           data-plasmic-name={"contentContainer"}
           data-plasmic-override={overrides.contentContainer}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.contentContainer,
-            {
-              [sty.contentContainer__hasSubtitle]: hasVariant(
-                variants,
-                "hasSubtitle",
-                "hasSubtitle"
-              ),
+          className={classNames(projectcss.all, sty.contentContainer, {
+            [sty.contentContainer__hasSubtitle]: hasVariant(
+              variants,
+              "hasSubtitle",
+              "hasSubtitle"
+            ),
 
-              [sty.contentContainer__hasTitle]: hasVariant(
-                variants,
-                "hasTitle",
-                "hasTitle"
-              ),
+            [sty.contentContainer__hasTitle]: hasVariant(
+              variants,
+              "hasTitle",
+              "hasTitle"
+            ),
 
-              [sty.contentContainer__hasTitle_hasSubtitle]:
-                hasVariant(variants, "hasTitle", "hasTitle") &&
-                hasVariant(variants, "hasSubtitle", "hasSubtitle")
-            }
-          )}
+            [sty.contentContainer__hasTitle_hasSubtitle]:
+              hasVariant(variants, "hasTitle", "hasTitle") &&
+              hasVariant(variants, "hasSubtitle", "hasSubtitle")
+          })}
         >
           {p.renderPlasmicSlot({
             defaultContents: null,

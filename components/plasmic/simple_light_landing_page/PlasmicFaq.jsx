@@ -17,7 +17,6 @@ import {
 } from "@plasmicapp/react-web";
 import BaseCard from "../../BaseCard"; // plasmic-import: z_3Em9AZdlr/component
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicFaq.module.css"; // plasmic-import: CvHKSzfiMk9/css
 
@@ -38,26 +37,10 @@ function PlasmicFaq__RenderFunc(props) {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__iqqlo
-        )}
+        className={classNames(projectcss.all, sty.freeBox__iqqlo)}
       >
-        <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__izxUi
-          )}
-        >
-          <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__hJbzQ
-            )}
-          >
+        <div className={classNames(projectcss.all, sty.freeBox__izxUi)}>
+          <div className={classNames(projectcss.all, sty.freeBox__hJbzQ)}>
             {p.renderPlasmicSlot({
               defaultContents: "Are there long-term contracts?",
               value: args.children,

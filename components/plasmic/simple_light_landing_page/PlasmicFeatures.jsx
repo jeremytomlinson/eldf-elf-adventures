@@ -23,9 +23,8 @@ import Bullet from "../../Bullet"; // plasmic-import: B86J7ZdFwg8/component
 import Button from "../../Button"; // plasmic-import: 20t1qijZHMeb/component
 import HomeCta from "../../HomeCta"; // plasmic-import: dG6JOly9nPQ/component
 import Footer from "../../Footer"; // plasmic-import: 8bKqTYY3rib/component
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
+import { useScreenVariants as useScreenVariantsezDhBpsZrQd8 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicFeatures.module.css"; // plasmic-import: EED9Sa016sI/css
 
@@ -36,7 +35,7 @@ export const PlasmicFeatures__ArgProps = new Array();
 function PlasmicFeatures__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsezDhBpsZrQd8()
   });
 
   return (
@@ -51,14 +50,13 @@ function PlasmicFeatures__RenderFunc(props) {
         }
       `}</style>
 
-      <div className={defaultcss.plasmic_page_wrapper}>
+      <div className={projectcss.plasmic_page_wrapper}>
         <div
           data-plasmic-name={"root"}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
-            defaultcss.all,
             projectcss.all,
             projectcss.root_reset,
             sty.root
@@ -84,42 +82,23 @@ function PlasmicFeatures__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__pNpxX
-              )}
+              className={classNames(projectcss.all, sty.freeBox__pNpxX)}
             >
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.columns__fKqEf
-                )}
+                className={classNames(projectcss.all, sty.columns__fKqEf)}
               >
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.column__brPYc
-                  )}
-                >
+                <div className={classNames(projectcss.all, sty.column__brPYc)}>
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.freeBox___41NzN
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox___41NzN)}
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__xXsIv
                       )}
                     >
@@ -128,9 +107,8 @@ function PlasmicFeatures__RenderFunc(props) {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__kwmRj
                       )}
                     >
@@ -162,9 +140,8 @@ function PlasmicFeatures__RenderFunc(props) {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__fe8K
                       )}
                     >
@@ -176,11 +153,7 @@ function PlasmicFeatures__RenderFunc(props) {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.freeBox__mzfWu
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__mzfWu)}
                     >
                       <Button
                         className={classNames(
@@ -205,13 +178,7 @@ function PlasmicFeatures__RenderFunc(props) {
                   </p.Stack>
                 </div>
 
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.column__x3DhD
-                  )}
-                >
+                <div className={classNames(projectcss.all, sty.column__x3DhD)}>
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__pu9E)}
@@ -234,19 +201,9 @@ function PlasmicFeatures__RenderFunc(props) {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.columns___7FSdp
-                )}
+                className={classNames(projectcss.all, sty.columns___7FSdp)}
               >
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.column__npj0T
-                  )}
-                >
+                <div className={classNames(projectcss.all, sty.column__npj0T)}>
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__d4Xv2)}
@@ -265,27 +222,16 @@ function PlasmicFeatures__RenderFunc(props) {
                   />
                 </div>
 
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.column___7Kmvh
-                  )}
-                >
+                <div className={classNames(projectcss.all, sty.column___7Kmvh)}>
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.freeBox__vBt7B
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__vBt7B)}
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__vFvQl
                       )}
                     >
@@ -294,9 +240,8 @@ function PlasmicFeatures__RenderFunc(props) {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__hjnhi
                       )}
                     >
@@ -328,9 +273,8 @@ function PlasmicFeatures__RenderFunc(props) {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__hZgNm
                       )}
                     >
@@ -342,11 +286,7 @@ function PlasmicFeatures__RenderFunc(props) {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.freeBox__gNw4
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__gNw4)}
                     >
                       <Button
                         className={classNames(

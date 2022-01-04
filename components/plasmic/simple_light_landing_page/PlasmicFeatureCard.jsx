@@ -17,7 +17,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicFeatureCard.module.css"; // plasmic-import: n_vBK1v_NBk/css
 
@@ -40,51 +39,33 @@ function PlasmicFeatureCard__RenderFunc(props) {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        { [sty.root__long]: hasVariant(variants, "long", "long") }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__long]: hasVariant(variants, "long", "long")
+      })}
     >
       {(hasVariant(variants, "long", "long") ? true : true) ? (
         <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__otdlO,
-            {
-              [sty.freeBox__long__otdlO9LRfs]: hasVariant(
+          className={classNames(projectcss.all, sty.freeBox__otdlO, {
+            [sty.freeBox__long__otdlO9LRfs]: hasVariant(
+              variants,
+              "long",
+              "long"
+            )
+          })}
+        >
+          <div
+            className={classNames(projectcss.all, sty.freeBox__soDyT, {
+              [sty.freeBox__long__soDyT9LRfs]: hasVariant(
                 variants,
                 "long",
                 "long"
               )
-            }
-          )}
-        >
-          <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__soDyT,
-              {
-                [sty.freeBox__long__soDyT9LRfs]: hasVariant(
-                  variants,
-                  "long",
-                  "long"
-                )
-              }
-            )}
+            })}
           >
             {p.renderPlasmicSlot({
               defaultContents: (
                 <svg
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.svg__mIov
-                  )}
+                  className={classNames(projectcss.all, sty.svg__mIov)}
                   role={"img"}
                 />
               ),
@@ -98,18 +79,9 @@ function PlasmicFeatureCard__RenderFunc(props) {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox___3TDyz,
-          {
-            [sty.freeBox__long___3TDyz9LRfs]: hasVariant(
-              variants,
-              "long",
-              "long"
-            )
-          }
-        )}
+        className={classNames(projectcss.all, sty.freeBox___3TDyz, {
+          [sty.freeBox__long___3TDyz9LRfs]: hasVariant(variants, "long", "long")
+        })}
       >
         {p.renderPlasmicSlot({
           defaultContents: "Title",
@@ -135,27 +107,18 @@ function PlasmicFeatureCard__RenderFunc(props) {
 
       {(hasVariant(variants, "long", "long") ? true : true) ? (
         <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__zq83U,
-            {
-              [sty.freeBox__long__zq83U9LRfs]: hasVariant(
-                variants,
-                "long",
-                "long"
-              )
-            }
-          )}
+          className={classNames(projectcss.all, sty.freeBox__zq83U, {
+            [sty.freeBox__long__zq83U9LRfs]: hasVariant(
+              variants,
+              "long",
+              "long"
+            )
+          })}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <svg
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__vFzbF
-                )}
+                className={classNames(projectcss.all, sty.svg__vFzbF)}
                 role={"img"}
               />
             ),

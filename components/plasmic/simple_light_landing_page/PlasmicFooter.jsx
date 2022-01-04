@@ -17,9 +17,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
+import { useScreenVariants as useScreenVariantsezDhBpsZrQd8 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicFooter.module.css"; // plasmic-import: 8bKqTYY3rib/css
 
@@ -30,7 +29,7 @@ export const PlasmicFooter__ArgProps = new Array();
 function PlasmicFooter__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsezDhBpsZrQd8()
   });
 
   return (
@@ -41,34 +40,18 @@ function PlasmicFooter__RenderFunc(props) {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__ckwfC
-        )}
+        className={classNames(projectcss.all, sty.freeBox__ckwfC)}
       >
-        <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__xTshv
-          )}
-        >
+        <div className={classNames(projectcss.all, sty.freeBox__xTshv)}>
           <p.PlasmicLink
             className={classNames(
-              defaultcss.a,
               projectcss.a,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.link___9SW1G
             )}
             component={Link}
@@ -80,9 +63,8 @@ function PlasmicFooter__RenderFunc(props) {
 
           <p.PlasmicLink
             className={classNames(
-              defaultcss.a,
               projectcss.a,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.link__oyNfK
             )}
             component={Link}

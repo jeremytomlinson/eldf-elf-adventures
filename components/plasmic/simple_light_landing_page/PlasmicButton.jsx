@@ -9,6 +9,7 @@
 // Plasmic Project: doqqBYaWyoDkH95Fx1Fcw5
 // Component: 20t1qijZHMeb
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import * as pp from "@plasmicapp/react-web";
 import {
@@ -19,7 +20,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicButton.module.css"; // plasmic-import: 20t1qijZHMeb/css
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: qkIVDSG7aE93/icon
@@ -60,7 +60,6 @@ function PlasmicButton__RenderFunc(props) {
       data-plasmic-for-node={forNode}
       hasGap={true}
       className={classNames(
-        defaultcss.button,
         projectcss.button,
         projectcss.root_reset,
         sty.root,
@@ -130,36 +129,27 @@ function PlasmicButton__RenderFunc(props) {
         <div
           data-plasmic-name={"startIconContainer"}
           data-plasmic-override={overrides.startIconContainer}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.startIconContainer,
-            {
-              [sty.startIconContainer__color_blue]: hasVariant(
-                variants,
-                "color",
-                "blue"
-              ),
+          className={classNames(projectcss.all, sty.startIconContainer, {
+            [sty.startIconContainer__color_blue]: hasVariant(
+              variants,
+              "color",
+              "blue"
+            ),
 
-              [sty.startIconContainer__shape_rounded_showStartIcon]:
-                hasVariant(variants, "shape", "rounded") &&
-                hasVariant(variants, "showStartIcon", "showStartIcon"),
-              [sty.startIconContainer__showStartIcon]: hasVariant(
-                variants,
-                "showStartIcon",
-                "showStartIcon"
-              )
-            }
-          )}
+            [sty.startIconContainer__shape_rounded_showStartIcon]:
+              hasVariant(variants, "shape", "rounded") &&
+              hasVariant(variants, "showStartIcon", "showStartIcon"),
+            [sty.startIconContainer__showStartIcon]: hasVariant(
+              variants,
+              "showStartIcon",
+              "showStartIcon"
+            )
+          })}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <ChecksvgIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__okR5Q
-                )}
+                className={classNames(projectcss.all, sty.svg__okR5Q)}
                 role={"img"}
               />
             ),
@@ -197,32 +187,27 @@ function PlasmicButton__RenderFunc(props) {
       <div
         data-plasmic-name={"contentContainer"}
         data-plasmic-override={overrides.contentContainer}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.contentContainer,
-          {
-            [sty.contentContainer_____focusVisibleWithin]:
-              triggers.focusVisibleWithin_root,
-            [sty.contentContainer__isDisabled]: hasVariant(
-              variants,
-              "isDisabled",
-              "isDisabled"
-            ),
+        className={classNames(projectcss.all, sty.contentContainer, {
+          [sty.contentContainer_____focusVisibleWithin]:
+            triggers.focusVisibleWithin_root,
+          [sty.contentContainer__isDisabled]: hasVariant(
+            variants,
+            "isDisabled",
+            "isDisabled"
+          ),
 
-            [sty.contentContainer__shape_rounded]: hasVariant(
-              variants,
-              "shape",
-              "rounded"
-            ),
+          [sty.contentContainer__shape_rounded]: hasVariant(
+            variants,
+            "shape",
+            "rounded"
+          ),
 
-            [sty.contentContainer__showEndIcon]: hasVariant(
-              variants,
-              "showEndIcon",
-              "showEndIcon"
-            )
-          }
-        )}
+          [sty.contentContainer__showEndIcon]: hasVariant(
+            variants,
+            "showEndIcon",
+            "showEndIcon"
+          )
+        })}
       >
         {p.renderPlasmicSlot({
           defaultContents: "Button",
@@ -291,27 +276,18 @@ function PlasmicButton__RenderFunc(props) {
         <div
           data-plasmic-name={"endIconContainer"}
           data-plasmic-override={overrides.endIconContainer}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.endIconContainer,
-            {
-              [sty.endIconContainer__showEndIcon]: hasVariant(
-                variants,
-                "showEndIcon",
-                "showEndIcon"
-              )
-            }
-          )}
+          className={classNames(projectcss.all, sty.endIconContainer, {
+            [sty.endIconContainer__showEndIcon]: hasVariant(
+              variants,
+              "showEndIcon",
+              "showEndIcon"
+            )
+          })}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <ChecksvgIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__k1XGg
-                )}
+                className={classNames(projectcss.all, sty.svg__k1XGg)}
                 role={"img"}
               />
             ),
@@ -344,7 +320,7 @@ function PlasmicButton__RenderFunc(props) {
 }
 
 function useBehavior(props, ref) {
-  return pp.useButton(
+  const b = pp.useButton(
     PlasmicButton,
     props,
     {
@@ -363,6 +339,13 @@ function useBehavior(props, ref) {
 
     ref
   );
+
+  if (b.plasmicProps.overrides.root.as === "a") {
+    b.plasmicProps.overrides.root.as = p.PlasmicLink;
+    b.plasmicProps.overrides.root.props.component = Link;
+    b.plasmicProps.overrides.root.props.platform = "nextjs";
+  }
+  return b;
 }
 
 const PlasmicDescendants = {

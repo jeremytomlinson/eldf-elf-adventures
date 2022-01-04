@@ -19,9 +19,8 @@ import {
 } from "@plasmicapp/react-web";
 import TextInput from "../../TextInput"; // plasmic-import: guYt0oG3Lnxr/component
 import Button from "../../Button"; // plasmic-import: 20t1qijZHMeb/component
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
+import { useScreenVariants as useScreenVariantsezDhBpsZrQd8 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicHomeCta.module.css"; // plasmic-import: dG6JOly9nPQ/css
 import SphereIcon from "./icons/PlasmicIcon__Sphere"; // plasmic-import: oKlzkj_C5s3-/icon
@@ -33,7 +32,7 @@ export const PlasmicHomeCta__ArgProps = new Array();
 function PlasmicHomeCta__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsezDhBpsZrQd8()
   });
 
   return (
@@ -42,27 +41,17 @@ function PlasmicHomeCta__RenderFunc(props) {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__hT5Da
-        )}
+        className={classNames(projectcss.all, sty.freeBox__hT5Da)}
       >
         <div
           className={classNames(
-            defaultcss.all,
             projectcss.all,
-            defaultcss.__wab_text,
+            projectcss.__wab_text,
             sty.text__mDsy
           )}
         >
@@ -71,9 +60,8 @@ function PlasmicHomeCta__RenderFunc(props) {
 
         <div
           className={classNames(
-            defaultcss.all,
             projectcss.all,
-            defaultcss.__wab_text,
+            projectcss.__wab_text,
             sty.text__z4NBd
           )}
         >
@@ -85,11 +73,7 @@ function PlasmicHomeCta__RenderFunc(props) {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__mFb3R
-          )}
+          className={classNames(projectcss.all, sty.freeBox__mFb3R)}
         >
           <TextInput
             data-plasmic-name={"textInput"}
@@ -111,9 +95,8 @@ function PlasmicHomeCta__RenderFunc(props) {
 
         <div
           className={classNames(
-            defaultcss.all,
             projectcss.all,
-            defaultcss.__wab_text,
+            projectcss.__wab_text,
             sty.text__adfzX
           )}
         >
@@ -122,17 +105,11 @@ function PlasmicHomeCta__RenderFunc(props) {
       </p.Stack>
 
       {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-        <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__dlP8I
-          )}
-        >
+        <div className={classNames(projectcss.all, sty.freeBox__dlP8I)}>
           <SphereIcon
             data-plasmic-name={"svg"}
             data-plasmic-override={overrides.svg}
-            className={classNames(defaultcss.all, projectcss.all, sty.svg)}
+            className={classNames(projectcss.all, sty.svg)}
             role={"img"}
           />
         </div>
@@ -142,8 +119,8 @@ function PlasmicHomeCta__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textInput", "button", "svg"],
-  textInput: ["textInput"],
+  root: ["root", "textInput", "textbox", "button", "svg"],
+  textInput: ["textInput", "textbox"],
   button: ["button"],
   svg: ["svg"]
 };

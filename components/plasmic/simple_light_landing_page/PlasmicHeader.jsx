@@ -19,9 +19,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: 20t1qijZHMeb/component
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
+import { useScreenVariants as useScreenVariantsezDhBpsZrQd8 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicHeader.module.css"; // plasmic-import: lMgI0yXdacd/css
 import LogoIcon from "./icons/PlasmicIcon__Logo"; // plasmic-import: kvhzFbMVyF6d/icon
@@ -34,7 +33,7 @@ export const PlasmicHeader__ArgProps = new Array();
 function PlasmicHeader__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsezDhBpsZrQd8()
   });
 
   return (
@@ -43,23 +42,18 @@ function PlasmicHeader__RenderFunc(props) {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <p.PlasmicLink
         data-plasmic-name={"link"}
         data-plasmic-override={overrides.link}
-        className={classNames(defaultcss.a, projectcss.a, sty.link)}
+        className={classNames(projectcss.a, sty.link)}
         component={Link}
         href={"/"}
         platform={"nextjs"}
       >
         <LogoIcon
-          className={classNames(defaultcss.all, projectcss.all, sty.svg__uo2WZ)}
+          className={classNames(projectcss.all, sty.svg__uo2WZ)}
           role={"img"}
         />
       </p.PlasmicLink>
@@ -69,7 +63,7 @@ function PlasmicHeader__RenderFunc(props) {
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
         hasGap={true}
-        className={classNames(defaultcss.all, projectcss.all, sty.freeBox)}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
         <Button
           className={classNames("__wab_instance", sty.button__bl8U7)}
@@ -102,11 +96,7 @@ function PlasmicHeader__RenderFunc(props) {
             className={classNames("__wab_instance", sty.button__rvx9)}
             endIcon={
               <RightArrowIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__w3Mq7
-                )}
+                className={classNames(projectcss.all, sty.svg__w3Mq7)}
                 role={"img"}
               />
             }

@@ -443,20 +443,6 @@
 .img__vfCeM > .__wab_img-spacer > img {
   object-fit: cover;
 }
-.img__sLiOj {
-  position: relative;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  min-width: 0;
-  margin: 2rem 0rem;
-}
-.img__sLiOj > picture > img {
-  object-fit: cover;
-}
-.img__sLiOj > .__wab_img-spacer > img {
-  object-fit: cover;
-}
 .img__iVbbt {
   position: relative;
   object-fit: cover;

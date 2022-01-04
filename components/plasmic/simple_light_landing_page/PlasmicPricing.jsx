@@ -24,9 +24,8 @@ import Bullet from "../../Bullet"; // plasmic-import: B86J7ZdFwg8/component
 import Button from "../../Button"; // plasmic-import: 20t1qijZHMeb/component
 import Faq from "../../Faq"; // plasmic-import: CvHKSzfiMk9/component
 import Footer from "../../Footer"; // plasmic-import: 8bKqTYY3rib/component
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
+import { useScreenVariants as useScreenVariantsezDhBpsZrQd8 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicPricing.module.css"; // plasmic-import: jcBYij3XjfS/css
 
@@ -37,7 +36,7 @@ export const PlasmicPricing__ArgProps = new Array();
 function PlasmicPricing__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsezDhBpsZrQd8()
   });
 
   return (
@@ -52,14 +51,13 @@ function PlasmicPricing__RenderFunc(props) {
         }
       `}</style>
 
-      <div className={defaultcss.plasmic_page_wrapper}>
+      <div className={projectcss.plasmic_page_wrapper}>
         <div
           data-plasmic-name={"root"}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
-            defaultcss.all,
             projectcss.all,
             projectcss.root_reset,
             sty.root
@@ -87,27 +85,16 @@ function PlasmicPricing__RenderFunc(props) {
               data-plasmic-name={"columns"}
               data-plasmic-override={overrides.columns}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.columns
-              )}
+              className={classNames(projectcss.all, sty.columns)}
             >
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.column__jkBtu
-                )}
-              >
+              <div className={classNames(projectcss.all, sty.column__jkBtu)}>
                 <Plan
                   className={classNames("__wab_instance", sty.plan__yNiLp)}
                   price={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__g7E1
                       )}
                     >
@@ -124,24 +111,14 @@ function PlasmicPricing__RenderFunc(props) {
                 </Plan>
               </div>
 
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.column___1PyG
-                )}
-              >
+              <div className={classNames(projectcss.all, sty.column___1PyG)}>
                 <Plan
                   className={classNames("__wab_instance", sty.plan__g8Elw)}
                   description={
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.freeBox__etAb2
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__etAb2)}
                     >
                       <Bullet
                         className={classNames(
@@ -176,9 +153,8 @@ function PlasmicPricing__RenderFunc(props) {
                   price={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__htuC2
                       )}
                     >
@@ -195,22 +171,15 @@ function PlasmicPricing__RenderFunc(props) {
                 </Plan>
               </div>
 
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.column__bnnt4
-                )}
-              >
+              <div className={classNames(projectcss.all, sty.column__bnnt4)}>
                 <Plan
                   className={classNames("__wab_instance", sty.plan__rvDC)}
                   name={"Enterprise"}
                   price={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__xvWN
                       )}
                     >
@@ -243,11 +212,7 @@ function PlasmicPricing__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__xvtlV
-              )}
+              className={classNames(projectcss.all, sty.freeBox__xvtlV)}
             >
               <Faq
                 className={classNames("__wab_instance", sty.faq___59Axs)}

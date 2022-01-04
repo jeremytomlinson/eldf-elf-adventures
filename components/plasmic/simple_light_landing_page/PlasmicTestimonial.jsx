@@ -17,7 +17,6 @@ import {
 } from "@plasmicapp/react-web";
 import Avatar from "../../Avatar"; // plasmic-import: AtMZbr2aHA/component
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicTestimonial.module.css"; // plasmic-import: gdqDcFEklTJp/css
 import QuoteDashesIcon from "./icons/PlasmicIcon__QuoteDashes"; // plasmic-import: rkkAGLPs1BJO/icon
@@ -34,12 +33,7 @@ function PlasmicTestimonial__RenderFunc(props) {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <Avatar
         data-plasmic-name={"avatar"}
@@ -70,24 +64,19 @@ function PlasmicTestimonial__RenderFunc(props) {
       <QuoteDashesIcon
         data-plasmic-name={"svg"}
         data-plasmic-override={overrides.svg}
-        className={classNames(defaultcss.all, projectcss.all, sty.svg)}
+        className={classNames(projectcss.all, sty.svg)}
         role={"img"}
       />
 
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__yEk8
-        )}
+        className={classNames(projectcss.all, sty.freeBox__yEk8)}
       >
         <div
           className={classNames(
-            defaultcss.all,
             projectcss.all,
-            defaultcss.__wab_text,
+            projectcss.__wab_text,
             sty.text___3WOb9
           )}
         >
@@ -99,17 +88,12 @@ function PlasmicTestimonial__RenderFunc(props) {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__f2FHw
-          )}
+          className={classNames(projectcss.all, sty.freeBox__f2FHw)}
         >
           <div
             className={classNames(
-              defaultcss.all,
               projectcss.all,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.text__xok51
             )}
           >
@@ -118,9 +102,8 @@ function PlasmicTestimonial__RenderFunc(props) {
 
           <div
             className={classNames(
-              defaultcss.all,
               projectcss.all,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.text__cISa
             )}
           >

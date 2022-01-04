@@ -16,7 +16,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicBullet.module.css"; // plasmic-import: B86J7ZdFwg8/css
 import Done24Pxsvg2Icon from "./icons/PlasmicIcon__Done24Pxsvg2"; // plasmic-import: xpS0XUDTVivE/icon
@@ -35,17 +34,12 @@ function PlasmicBullet__RenderFunc(props) {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <Done24Pxsvg2Icon
         data-plasmic-name={"svg"}
         data-plasmic-override={overrides.svg}
-        className={classNames(defaultcss.all, projectcss.all, sty.svg)}
+        className={classNames(projectcss.all, sty.svg)}
         role={"img"}
       />
 

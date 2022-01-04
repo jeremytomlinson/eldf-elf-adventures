@@ -20,9 +20,8 @@ import {
 } from "@plasmicapp/react-web";
 import Section from "../../Section"; // plasmic-import: 8HhDVoN451Z/component
 import Footer from "../../Footer"; // plasmic-import: 8bKqTYY3rib/component
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
+import { useScreenVariants as useScreenVariantsezDhBpsZrQd8 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: EzDhBpsZrQd8/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: doqqBYaWyoDkH95Fx1Fcw5/projectcss
 import * as sty from "./PlasmicHome.module.css"; // plasmic-import: DR0rcF1OhEh/css
 
@@ -33,7 +32,7 @@ export const PlasmicHome__ArgProps = new Array();
 function PlasmicHome__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsezDhBpsZrQd8()
   });
 
   return (
@@ -48,7 +47,7 @@ function PlasmicHome__RenderFunc(props) {
         }
       `}</style>
 
-      <div className={defaultcss.plasmic_page_wrapper}>
+      <div className={projectcss.plasmic_page_wrapper}>
         <p.Stack
           as={"div"}
           data-plasmic-name={"root"}
@@ -57,7 +56,6 @@ function PlasmicHome__RenderFunc(props) {
           data-plasmic-for-node={forNode}
           hasGap={true}
           className={classNames(
-            defaultcss.all,
             projectcss.all,
             projectcss.root_reset,
             sty.root
@@ -71,33 +69,20 @@ function PlasmicHome__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__fpw9
-              )}
+              className={classNames(projectcss.all, sty.freeBox__fpw9)}
             >
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox__iVmR
-                )}
+                className={classNames(projectcss.all, sty.freeBox__iVmR)}
               >
                 <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox___5J0Vl
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox___5J0Vl)}
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text__wgQcr
                     )}
                   >
@@ -108,9 +93,8 @@ function PlasmicHome__RenderFunc(props) {
 
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text___9W6OA
                     )}
                   >
@@ -122,9 +106,8 @@ function PlasmicHome__RenderFunc(props) {
 
                 <div
                   className={classNames(
-                    defaultcss.all,
                     projectcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.__wab_text,
                     sty.text__tpmiU
                   )}
                 >
@@ -134,13 +117,7 @@ function PlasmicHome__RenderFunc(props) {
                 </div>
               </p.Stack>
 
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox__rApKa
-                )}
-              >
+              <div className={classNames(projectcss.all, sty.freeBox__rApKa)}>
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__iB8K2)}
@@ -373,23 +350,6 @@ function PlasmicHome__RenderFunc(props) {
                   displayWidth={"100%"}
                   src={{
                     src: "/plasmic/eldf_elf_adventures/images/cutieBathroomGrannypng.png",
-                    fullWidth: 1600,
-                    fullHeight: 877,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__sLiOj)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  src={{
-                    src: "/plasmic/eldf_elf_adventures/images/lolpng.png",
                     fullWidth: 1600,
                     fullHeight: 877,
                     aspectRatio: undefined
